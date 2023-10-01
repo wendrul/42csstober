@@ -1,0 +1,22 @@
+.day-container {
+    min-height: 200px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.silent-small-text {
+    font-size: 10px;
+    color: #77777785;
+    font-family: Montserrat, Arial;
+}
+
+#day01 {
+    width: 100px;
+    height: 100px;
+    background: rgb(255, 225, 0);
+    border-radius: 50%;
+    position: 0;
+}
