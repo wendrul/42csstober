@@ -1,2 +1,2 @@
 # 42csstober
-[See the result here](https://wendrul.github.io/42csstober/)
+[See the result here](http://www.wendrul.fr/42csstober/)
