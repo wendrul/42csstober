@@ -1,22 +1,119 @@
 .day-container {
-    min-height: 200px;
+  min-height: 200px;
 }
 
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .silent-small-text {
-    font-size: 10px;
-    color: #77777785;
-    font-family: Montserrat, Arial;
+  font-size: 10px;
+  color: #77777785;
+  font-family: Montserrat, Arial;
 }
 
 #day01 {
-    width: 100px;
-    height: 100px;
-    background: rgb(255, 225, 0);
-    border-radius: 50%;
-    position: 0;
+  width: 100px;
+  height: 100px;
+  background: rgb(255, 225, 0);
+  border-radius: 50%;
+}
+
+#day02 {
+  /* background: rgb(255, 225, 0); */
+  width: 100px;
+  height: 100px;
+}
+
+#day02 .head {
+  width: 50px;
+  height: 75px;
+  margin-left: 20px;
+  background: rgb(255, 204, 127);
+  border-radius: 10%;
+}
+
+#day02 .censor {
+  width: 70px;
+  height: 10px;
+  margin-top: -45px;
+  margin-left: 10px;
+  background-color: black;
+  border-radius: 0%;
+}
+
+#day02 .hair {
+  width: 50px;
+  height: 20px;
+  margin-top: -40px;
+  margin-left: 20px;
+  background: rgb(144, 81, 34);
+  border-radius: 15%;
+}
+
+#day02 .mouth {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-left: 30px;
+  margin-top: 20px;
+  box-shadow: 0px 3px 1px 0 rgb(194, 16, 57);
+}
+
+#day03 {
+  /* background: rgb(255, 225, 0); */
+  width: 100px;
+  height: 100px;
+}
+
+#day03 .lid {
+  border-bottom: 40px solid rgb(186, 184, 145);
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-radius: 10%;
+  height: 0;
+  width: 100px;
+}
+
+#day03 .lid::after {
+  border-bottom: 30px solid rgb(255, 251, 201);
+  margin-top: 3px;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-radius: 10%;
+  height: 0;
+  width: 80px;
+  position: absolute;
+  content: "";
+}
+
+#day03 .body {
+  background: rgb(248, 243, 176);
+  margin-left: 15px;
+  width: 70px;
+  height: 40px;
+}
+
+#day03 .body::after {
+  /* background: rgb(48, 34, 34); */
+  background: rgb(248, 243, 176);
+  margin-left: 0px;
+  width: 70px;
+  height: 24px;
+  margin-top: 27px;
+  border-radius: 50%;
+  position: absolute;
+  content: "";
+}
+
+#day03 .spoon::after {
+  height: 80px;
+  transform: skew(-20deg);
+  background: rgb(106, 106, 106);
+  margin-top: -87px;
+  margin-left: 80px;
+  width: 8px;
+  position: absolute;
+  content: "";
 }
