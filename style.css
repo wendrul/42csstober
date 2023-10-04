@@ -117,3 +117,74 @@ body {
   position: absolute;
   content: "";
 }
+
+#day04 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: conic-gradient(
+    from 0deg,
+    #FF0000,
+    #FF7F00,
+    #FFFF00,
+    #00FF00,
+    #0000FF,
+    #4B0082,
+    #9400D3,
+    #FF0000
+);
+
+background: conic-gradient(
+  from 0deg,
+  #FF0000,
+  #000000,
+  #FF7F00,
+  #000000,
+  #FFFF00,
+  #000000,
+  #00FF00,
+  #000000,
+  #0000FF,
+  #000000,
+  #4B0082,
+  #000000,
+  #9400D3,
+  #000000,
+  #FF0000
+);
+
+/* background: conic-gradient(
+  from 0deg,
+  #FF0000,
+  #9400D3,
+  #FF7F00,
+  #4B0082,
+  #FFFF00,
+  #0000FF,
+  #000000,
+  #00FF00,
+  #FF0000
+); */
+
+transition: transform 0.5s ease-in-out;
+
+}
+
+#day03:hover {
+animation: rotate 5s linear infinite;
+
+}
+
+#day04:hover {
+  animation: rotate 5s linear infinite;
+  
+  }
+
+@keyframes rotate {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
