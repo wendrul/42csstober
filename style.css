@@ -1,16 +1,16 @@
 .day-container {
-    min-height: 200px;
+  min-height: 200px;
 }
 
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .silent-small-text {
-    font-size: 10px;
-    color: #77777785;
-    font-family: Montserrat, Arial;
+  font-size: 10px;
+  color: #77777785;
+  font-family: Montserrat, Arial;
 }
 
 
@@ -20,10 +20,7 @@ body {
     background: rgb(255, 225, 0);
     border-radius: 50%;
     z-index: 2;
-    position: relative;
 }
-
-
 
 #day06 {
     width: 120px;
@@ -56,4 +53,207 @@ body {
     left: 30px;
     position: absolute;
     content: "";
+}
+
+#day02 {
+  /* background: rgb(255, 225, 0); */
+  width: 100px;
+  height: 100px;
+}
+
+#day02 .head {
+  width: 50px;
+  height: 75px;
+  margin-left: 20px;
+  background: rgb(255, 204, 127);
+  border-radius: 10%;
+}
+
+#day02 .censor {
+  width: 70px;
+  height: 10px;
+  margin-top: -45px;
+  margin-left: 10px;
+  background-color: black;
+  border-radius: 0%;
+}
+
+#day02 .hair {
+  width: 50px;
+  height: 20px;
+  margin-top: -40px;
+  margin-left: 20px;
+  background: rgb(144, 81, 34);
+  border-radius: 15%;
+}
+
+#day02 .mouth {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-left: 30px;
+  margin-top: 20px;
+  box-shadow: 0px 3px 1px 0 rgb(194, 16, 57);
+}
+
+#day03 {
+  /* background: rgb(255, 225, 0); */
+  width: 100px;
+  height: 100px;
+}
+
+#day03 .lid {
+  border-bottom: 40px solid rgb(186, 184, 145);
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-radius: 10%;
+  height: 0;
+  width: 100px;
+}
+
+#day03 .lid::after {
+  border-bottom: 30px solid rgb(255, 251, 201);
+  margin-top: 3px;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-radius: 10%;
+  height: 0;
+  width: 80px;
+  position: absolute;
+  content: "";
+}
+
+#day03 .body {
+  background: rgb(248, 243, 176);
+  margin-left: 15px;
+  width: 70px;
+  height: 40px;
+}
+
+#day03 .body::after {
+  /* background: rgb(48, 34, 34); */
+  background: rgb(248, 243, 176);
+  margin-left: 0px;
+  width: 70px;
+  height: 24px;
+  margin-top: 27px;
+  border-radius: 50%;
+  position: absolute;
+  content: "";
+}
+
+#day03 .spoon::after {
+  height: 80px;
+  transform: skew(-20deg);
+  background: rgb(106, 106, 106);
+  margin-top: -87px;
+  margin-left: 80px;
+  width: 8px;
+  position: absolute;
+  content: "";
+}
+
+#day04 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: conic-gradient(from 0deg,
+      #FF0000,
+      #FF7F00,
+      #FFFF00,
+      #00FF00,
+      #0000FF,
+      #4B0082,
+      #9400D3,
+      #FF0000);
+
+  background: conic-gradient(from 0deg,
+      #FF0000,
+      #000000,
+      #FF7F00,
+      #000000,
+      #FFFF00,
+      #000000,
+      #00FF00,
+      #000000,
+      #0000FF,
+      #000000,
+      #4B0082,
+      #000000,
+      #9400D3,
+      #000000,
+      #FF0000);
+
+  /* background: conic-gradient(
+  from 0deg,
+  #FF0000,
+  #9400D3,
+  #FF7F00,
+  #4B0082,
+  #FFFF00,
+  #0000FF,
+  #000000,
+  #00FF00,
+  #FF0000
+); */
+
+  transition: transform 0.5s ease-in-out;
+
+}
+
+#day03:hover {
+  animation: rotate 5s linear infinite;
+
+}
+
+#day04:hover {
+  animation: rotate 5s linear infinite;
+
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#day05 {
+  background: rgb(64, 94, 41);
+  text-indent: -999em;
+  width: 75px;
+  height: 85px;
+  box-sizing: content-box;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  border: 15px solid rgb(64, 94, 41);
+  border-bottom: 0;
+}
+
+#day05:before {
+  content: "/20";
+  position: absolute;
+  background: rgb(64, 94, 41);
+  width: 40px;
+  height: 90px;
+  bottom: -72px;
+  right: -37px;
+  border: 20px solid #eee;
+  border-radius: 25px;
+  box-sizing: content-box;
+}
+
+#day05:after {
+  content: "/20";
+  position: absolute;
+  width: 55px;
+  top: 50px;
+  height: 20px;
+  background: #eee;
+  right: 5px;
+  box-sizing: content-box;
 }
