@@ -122,38 +122,34 @@ body {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background: conic-gradient(
-    from 0deg,
-    #FF0000,
-    #FF7F00,
-    #FFFF00,
-    #00FF00,
-    #0000FF,
-    #4B0082,
-    #9400D3,
-    #FF0000
-);
+  background: conic-gradient(from 0deg,
+      #FF0000,
+      #FF7F00,
+      #FFFF00,
+      #00FF00,
+      #0000FF,
+      #4B0082,
+      #9400D3,
+      #FF0000);
 
-background: conic-gradient(
-  from 0deg,
-  #FF0000,
-  #000000,
-  #FF7F00,
-  #000000,
-  #FFFF00,
-  #000000,
-  #00FF00,
-  #000000,
-  #0000FF,
-  #000000,
-  #4B0082,
-  #000000,
-  #9400D3,
-  #000000,
-  #FF0000
-);
+  background: conic-gradient(from 0deg,
+      #FF0000,
+      #000000,
+      #FF7F00,
+      #000000,
+      #FFFF00,
+      #000000,
+      #00FF00,
+      #000000,
+      #0000FF,
+      #000000,
+      #4B0082,
+      #000000,
+      #9400D3,
+      #000000,
+      #FF0000);
 
-/* background: conic-gradient(
+  /* background: conic-gradient(
   from 0deg,
   #FF0000,
   #9400D3,
@@ -166,25 +162,63 @@ background: conic-gradient(
   #FF0000
 ); */
 
-transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 
 }
 
 #day03:hover {
-animation: rotate 5s linear infinite;
+  animation: rotate 5s linear infinite;
 
 }
 
 #day04:hover {
   animation: rotate 5s linear infinite;
-  
-  }
+
+}
 
 @keyframes rotate {
   0% {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
+
   100% {
-      transform: rotate(360deg);
+    transform: rotate(360deg);
   }
+}
+
+#day05 {
+  background: rgb(64, 94, 41);
+  text-indent: -999em;
+  width: 75px;
+  height: 85px;
+  box-sizing: content-box;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  border: 15px solid rgb(64, 94, 41);
+  border-bottom: 0;
+}
+
+#day05:before {
+  content: "/20";
+  position: absolute;
+  background: rgb(64, 94, 41);
+  width: 40px;
+  height: 90px;
+  bottom: -60px;
+  right: -37px;
+  border: 20px solid #eee;
+  border-radius: 25px;
+  box-sizing: content-box;
+}
+
+#day05:after {
+  content: "/20";
+  position: absolute;
+  width: 55px;
+  top: 50px;
+  height: 20px;
+  background: #eee;
+  right: 5px;
+  box-sizing: content-box;
 }
