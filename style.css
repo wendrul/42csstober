@@ -23,6 +23,13 @@ body {
 }
 
 #day06 {
+  /* background: rgb(255, 225, 0); */
+  width: 100px;
+  height: 100px;
+}
+
+
+#day06 .hat{
     width: 120px;
     height: 67px;
     background: rgb(255, 191, 0);
@@ -33,7 +40,7 @@ body {
     padding-bottom: 30px;
 }
 
-#day06::before {
+#day06 .hat::before {
     width: 60px;
     height: 80px;
     background: rgb(255, 191, 0);
@@ -44,7 +51,7 @@ body {
     content: "";
 }
 
-#day06::after {
+#day06 .hat::after {
     width: 60px;
     height: 40px;
     box-shadow: 0px 9px 0px 0px red;
